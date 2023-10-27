@@ -1,0 +1,107 @@
+<!-- <b>WELCOME TO AUTOMOTIVE REPAIR</b> -->
+<b style="font-size: 18px;">Car management</b><br/>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-left: 10px;
+    margin-top: 24px;">
+
+       <!-- table car management -->
+       <div class="row mb-3">
+        <div class="col-sm-9">
+          <table id="table_Car" class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">LicensePlate</th>
+                <th scope="col">RepairDate</th>
+                <th scope="col">customerName</th>
+                <th scope="col">catalogs</th>
+                <th scope="col">carMaker</th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody>
+             
+              
+            </tbody>
+          </table>
+           <!-- pagination -->
+           <ul class="pagination">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            
+        </ul>
+        </div>
+      </div>
+   
+    </div>
+</div>
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+
+          <!-- header -->
+          <div class="modal-header">
+              <h2 class="modal-title">Edit car</h2>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- body -->
+          <div class="modal-body">
+              <div class="modal-container">
+
+                <form style="line-height: 50px;">
+                  <!-- License plate -->
+                  <div class="row mb-3">
+                    <label for="inputLicensePlate" class="col-sm-3 col-form-label">License plate</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="licensePlate" readonly/>
+                    </div>
+                  </div>
+                  <!-- Repair date -->
+                  <div class="row mb-3">
+                      <label for="inputRepairDate" class="col-sm-3 col-form-label">Repair date</label>
+                      <div class="col-sm-6">
+                        <input type="date" class="form-control" id="repairDate" readonly/>
+                      </div>
+                  </div>
+                  <!-- customerName -->
+                  <div class="row mb-3">
+                      <label for="inputCustomerName" class="col-sm-3 col-form-label">Customer name</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="customerName">
+                      </div>
+                  </div>
+                  <!-- catalogs -->
+                  <div class="row mb-3">
+                      <label for="inputCatalog" class="col-sm-3 col-form-label">Catalog</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="catalog">
+                      </div>
+                  </div>
+                  <!-- carMaker -->
+                  <div class="row mb-3">
+                      <label for="inputCarMaker" class="col-sm-3 col-form-label">Car maker</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="carMaker">
+                      </div>
+                  </div>
+                 
+                </form>
+              </div>
+          </div>
+
+          <!-- footer -->
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="editCar()">Edit</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,183 @@
+<!-- <b>WELCOME TO AUTOMOTIVE REPAIR</b> -->
+<b style="font-size: 18px;">Accessory Detail</b><br />
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-left: 62px;
+    margin-top: 24px;">
+
+    <form style="line-height: 50px;">
+      <!-- License plate -->
+      <div class="row mb-3">
+        <label for="inputLicensePlate" class="col-sm-3 col-form-label">License plate</label>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" id="licensePlate">
+        </div>
+        <label for="inputRepairDate" class="col-sm-3 col-form-label">Repair date</label>
+        <!-- Repair date -->
+        <div class="col-sm-3" style="margin-left: -80px">
+          <input type="date" class="form-control" id="repairDate">
+        </div>
+      </div>
+
+      <!-- Name -->
+      <div class="row mb-3">
+        <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="Name">
+        </div>
+      </div>
+      <!-- Price -->
+      <div class="row mb-3">
+        <label for="inputCatalog" class="col-sm-3 col-form-label">Price</label>
+        <div class="col-sm-6">
+          <input type="number" class="form-control" id="Price">
+        </div>
+        <p>(VNĐ)</p>
+      </div>
+      <!-- status damage -->
+      <div class="row mb-3">
+        <label for="inputCarMaker" class="col-sm-3 col-form-label">Status damaged</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="statusDamaged">
+        </div>
+      </div>
+      <!-- repair status -->
+      <div class="row mb-3">
+        <label for="inputCarMaker" class="col-sm-3 col-form-label">Repair status</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="repairStatus">
+        </div>
+      </div>
+      <!--  button and link -->
+      <div class="row mb-3">
+        <!-- button save -->
+        <!-- <button style="margin-left: 19px;" class="btn btn-primary" onclick="saveNewCar()">Save</button> -->
+        <!-- <a style="font-size: 16px; margin-left: 32px;" onclick="saveNewCar()">Save Accessory</a> -->
+        <button 
+        style="font-size: 16px; margin-left: 32px;"
+        type="button" class="btn btn-info add-new" onclick="saveNewAccessory()">Save Accessory</button>
+
+      </div>
+      <!-- table accessory -->
+      <div class="row mb-3">
+        <div class="col-sm-9">
+          <table id="table_accessory" class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">LicensePlate</th>
+                <th scope="col">RepairDate</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Status damage</th>
+                <th scope="col">Repair status</th>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody>
+              
+
+            </tbody>
+          </table>
+           <!-- pagination -->
+           <ul class="pagination">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            
+        </ul>
+        </div>
+      </div>
+
+
+    </form>
+
+  </div>
+</div>
+
+
+<!-- Modal HTML -->
+<div id="myAccessoryModal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- header -->
+      <div class="modal-header">
+        <h2 class="modal-title">Edit accessory</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- body -->
+      <div class="modal-body">
+        <div class="modal-container">
+
+          <form style="line-height: 50px;">
+            <!-- License plate -->
+            <div class="row mb-3">
+              <label for="inputLicensePlate" class="col-sm-3 col-form-label">ID</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="modal_ID" readonly/>
+              </div>
+              
+            </div>
+            <!-- License plate -->
+            <div class="row mb-3">
+              <label for="inputLicensePlate" class="col-sm-3 col-form-label">License plate</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="modal_licensePlate" readonly/>
+              </div>
+              
+            </div>
+
+            <!-- Name -->
+            <div class="row mb-3">
+              <label for="inputRepairDate" class="col-sm-3 col-form-label">Repair date</label>
+              <!-- Repair date -->
+              <div class="col-sm-6">
+                <input type="date" class="form-control" id="modal_repairDate" readonly/>
+              </div>
+            </div>
+
+            <!-- Name -->
+            <div class="row mb-3">
+              <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="modal_Name">
+              </div>
+            </div>
+            <!-- Price -->
+            <div class="row mb-3">
+              <label for="inputCatalog" class="col-sm-3 col-form-label">Price</label>
+              <div class="col-sm-6">
+                <input type="number" class="form-control" id="modal_Price">
+              </div>
+              <p>(VNĐ)</p>
+            </div>
+            <!-- status damage -->
+            <div class="row mb-3">
+              <label for="inputCarMaker" class="col-sm-3 col-form-label">Status damaged</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="modal_statusDamaged">
+              </div>
+            </div>
+            <!-- repair status -->
+            <div class="row mb-3">
+              <label for="inputCarMaker" class="col-sm-3 col-form-label">Repair status</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="modal_repairStatus">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary" onclick="editAccessory()">Edit</button>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- footer -->

@@ -1,0 +1,43 @@
+.container{
+    width: 500px;
+    height: 100%;
+    background-color: rgb(245, 243, 241);
+    /* border: 1px solid black; */
+}
+
+.Banner{
+    width: 100%;
+    height: 100px;
+    /* background-color: rgb(121, 187, 56); */
+    /* border-bottom: 1px solid black; */
+    border: 1px solid black;
+    text-align: center;
+}
+
+.Main {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+
+}
+
+
+.MenuLeft{
+    height: 100%;
+    border-right: 1px solid black;
+    
+}
+
+.Body{
+
+}
+
+.Footer{
+     width: 100%;
+    height: 100px;
+    /* background-color: rgb(238, 97, 191); */
+    /* border-top: 1px solid black; */
+    border: 1px solid black;
+    text-align: center;
+}
+

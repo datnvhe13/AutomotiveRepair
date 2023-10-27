@@ -1,0 +1,58 @@
+<!-- <b>WELCOME TO AUTOMOTIVE REPAIR</b> -->
+<b style="font-size: 18px;">CAR DETAIL</b><br/>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-left: 62px;
+    margin-top: 24px;">
+
+        <form style="line-height: 50px;">
+            <!-- License plate -->
+            <div class="row mb-3">
+              <label for="inputLicensePlate" class="col-sm-3 col-form-label">License plate</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="licensePlate" required/>
+              </div>
+            </div>
+            <!-- Repair date -->
+            <div class="row mb-3">
+                <label for="inputRepairDate" class="col-sm-3 col-form-label">Repair date</label>
+                <div class="col-sm-6">
+                  <input type="date" class="form-control" id="repairDate" required/>
+                </div>
+            </div>
+            <!-- customerName -->
+            <div class="row mb-3">
+                <label for="inputCustomerName" class="col-sm-3 col-form-label">Customer name</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="customerName" required/>
+                </div>
+            </div>
+            <!-- catalogs -->
+            <div class="row mb-3">
+                <label for="inputCatalog" class="col-sm-3 col-form-label">Catalog</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="catalog" required/>
+                </div>
+            </div>
+            <!-- carMaker -->
+            <div class="row mb-3">
+                <label for="inputCarMaker" class="col-sm-3 col-form-label">Car maker</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="carMaker" required/>
+                </div>
+            </div>
+            <!--  button and link -->
+            <div class="row mb-3">
+                <!-- button save -->
+                <button type="button" class="btn btn-info" onclick="saveNewCar()">Save</button>
+                <!-- accessory detail link -->
+                    <a style="font-size: 16px; margin-left: 32px;" onclick="accessoryDetail()">Accessory detail</a>
+            </div>
+
+          </form>
+   
+    </div>
+</div>
+
+
+
+
